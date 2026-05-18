@@ -82,11 +82,9 @@ public ArrayList<ProdutosDTO> listarProdutosVendidos() {
             listagem.add(produto);
         }
 
-    } catch (Exception e) {
-
-        JOptionPane.showMessageDialog(null, "Erro ao listar produtos vendidos");
-    }
-
+   } catch (Exception e) {
+    JOptionPane.showMessageDialog(null, "Erro ao vender produto: " + e.getMessage());
+}
     return listagem;
 }}
 
